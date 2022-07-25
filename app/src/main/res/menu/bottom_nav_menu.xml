@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_Enviar"
+        android:icon="@drawable/ic_assignment_returned_black_18_dp"
+        android:title="Enviar" />
+
+    <item
+        android:id="@+id/menu_item_Recibir"
+        android:title="Recibir"
+        android:enabled="false"
+        />
+
+    <item
+        android:id="@+id/menu_item_Person"
+        android:icon="@drawable/ic_person"
+        android:title="Perfil" />
+</menu>

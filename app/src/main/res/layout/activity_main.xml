@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Contain avartar, logo, setting-->
+        <RelativeLayout
+            android:id="@+id/relavtive_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/spacing_10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/bitmap_copy_2"
+                app:civ_border_width="0dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/border_radius_50"
+                android:layout_toRightOf="@id/profile_image"
+                android:layout_marginLeft="-10dp"
+                android:backgroundTint="#dd0164">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/paypal_logo" />
+
+            <ImageView
+                android:id="@+id/btn_setting"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_settings_black_18_dp" />
+
+        </RelativeLayout>
+        <!--End-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relavtive_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="100dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_margin="@dimen/spacing_10dp"
+                    android:background="@android:color/transparent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradiant_background"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="@dimen/spacing_25dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/bitmap_copy_2"
+                                app:civ_border_width="0dp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="@dimen/spacing_10dp"
+                                android:background="@drawable/style_button_borderradius"
+                                android:gravity="center"
+                                android:text="@string/button_hoy"
+                                android:textColor="@color/black"
+                                app:backgroundTint="#fff0b4" />
+                        </RelativeLayout>
+
+                        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/spacing_25dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_14sp"
+                            tools:text="Nina te ha enviado "
+                            android:text="Nina te ha enviado"/>
+
+                        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/spacing_25dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_25sp"
+                            android:text="20,00€"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="@dimen/spacing_25dp"
+                            android:paddingEnd="@dimen/spacing_10dp">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_color"
+                                android:paddingStart="@dimen/spacing_10dp"
+                                android:paddingEnd="@dimen/spacing_10dp"
+                                android:text="@string/details"
+                                android:textSize="@dimen/textSize_14sp"
+                                app:backgroundTint="#fff" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/spacing_10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mensaje"
+                                    android:textSize="@dimen/textSize_12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Por la cena..."
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/textSize_16sp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/send_again"
+                    android:layout_marginStart="@dimen/spacing_10dp"
+                    android:textColor="#003087"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:textStyle="bold"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="LinearLayoutManager"
+                    android:padding="@dimen/spacing_15dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_10dp"
+                        android:text="@string/activity"
+                        android:textColor="@color/darkish_blue"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textSize_14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/see_all"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="@dimen/spacing_10dp"
+                        android:textColor="@color/blue"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/textSize_12sp"/>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_view_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_margin="@dimen/spacing_10dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <!--Bottom navigation-->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingTop="@dimen/spacing_10dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="20dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            app:elevation="0dp"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#005ebc"
+        android:src="@drawable/icon_assigment_down"
+        app:layout_anchor="@id/bottomAppBar" />
+    <!--End of bottom navigation-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

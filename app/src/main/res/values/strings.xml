@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UIPayPal</string>
+    <string name="button_hoy">HOY</string>
+    <string name="details">VER DETALLES</string>
+    <string name="send_again">Enviar de nuevo</string>
+    <string name="activity">Actividad</string>
+    <string name="see_all">Ver más movimientos</string>
+</resources>

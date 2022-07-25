@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextStyle7"></style>
+
+    <style name="TextStyle2"></style>
+
+    <style name="ToolbarTheme" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">#fff</item>
+        <item name="titleEnabled">false</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:statusBarColor">#005ebc</item>
+
+    </style>
+
+
+    <style name="AppTheme" parent="android:Theme.Light">
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">#006eff</item>
+    </style>
+
+
+
+
+</resources>

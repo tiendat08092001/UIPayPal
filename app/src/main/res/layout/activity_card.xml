@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".card_activity.CardActivity">
+
+    <include layout="@layout/card_actionbar" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar_card_activity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/background_gradiant"
+                android:orientation="vertical"
+                android:paddingBottom="120dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/spacing_15dp"
+                    android:text="Cuentas bancarias y tarjetas "
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textview_message_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/spacing_15dp"
+                    android:text="Mantenemos tus datos financieros protegidos para que nadie vea la información confidencial."
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout_1"
+                android:layout_marginTop="-100dp"
+                android:background="@drawable/border_radius_50"
+                android:paddingStart="@dimen/spacing_15dp"
+                android:paddingEnd="@dimen/spacing_15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_card" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview_my_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_15dp"
+                android:layout_marginTop="@dimen/spacing_20dp"
+                android:layout_marginEnd="@dimen/spacing_15dp"
+                android:text="Mis tarjetas"
+                android:textColor="#001d50"
+                android:layout_below="@+id/linear_layout_image"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_view_mycard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textview_my_card"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycle_view_mycard"
+
+                android:paddingBottom="10dp">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/ic_add_24"
+                    android:backgroundTint="#0054ae"
+                    android:layout_marginEnd="@dimen/spacing_15dp"/>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

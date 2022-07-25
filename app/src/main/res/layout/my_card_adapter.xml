@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/master_card"
+        android:layout_width="@dimen/spacing_47dp"
+        android:layout_height="@dimen/spacing_36dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="@dimen/spacing_15dp"
+        android:src="@drawable/ic_visa_card" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/spacing_25dp"
+        android:layout_toRightOf="@id/master_card">
+
+        <TextView
+            android:id="@+id/text_view_category_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Mastercard"
+            android:textColor="#1b1b1b"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/card_key_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_category_card"
+            android:text="****9889"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/pop_up_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_pop_up_menu" />
+
+    <LinearLayout
+        android:id="@+id/item_pop_up_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/spacing_10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:layout_width="@dimen/spacing_45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_butchi"
+            android:background="@drawable/background_border_card_activity"
+            android:backgroundTint="#003087"
+            android:elevation="5dp"/>
+
+        <ImageButton
+            android:layout_width="@dimen/spacing_45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_thungrac"
+            android:layout_marginStart="-6dp"
+            android:background="@drawable/background_border_card_activity"
+            android:backgroundTint="#025ed7"
+            android:elevation="3dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_esc"
+            android:layout_width="@dimen/spacing_45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_esc"
+            android:layout_marginStart="-6dp"
+            android:background="@drawable/background_border_card_activity"
+            android:backgroundTint="#006eff"/>
+
+    </LinearLayout>
+</RelativeLayout>
