@@ -9,8 +9,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_user"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
         app:civ_border_width="1dp"
         android:src="@drawable/bitmap_copy_2"
         app:civ_border_color="@android:color/transparent" />
@@ -20,6 +20,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/light_black"
-        android:textSize="10sp"
+        android:textSize="@dimen/_10ssp"
         android:text="demo..."/>
 </LinearLayout>

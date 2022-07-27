@@ -20,15 +20,15 @@
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/profile_image"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_marginLeft="10dp"
                 android:src="@drawable/bitmap_copy_2"
                 app:civ_border_width="0dp" />
 
             <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
                 android:background="@drawable/border_radius_50"
                 android:layout_toRightOf="@id/profile_image"
                 android:layout_marginLeft="-10dp"
@@ -37,16 +37,16 @@
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_centerInParent="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/paypal_logo" />
 
             <ImageView
                 android:id="@+id/btn_setting"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerInParent="true"
                 android:layout_marginEnd="10dp"
@@ -69,8 +69,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="220dp"
-                    android:layout_margin="@dimen/spacing_10dp"
+                    android:layout_height="@dimen/_210sdp"
+                    android:layout_margin="@dimen/_10sdp"
                     android:background="@android:color/transparent">
 
                     <LinearLayout
@@ -85,9 +85,9 @@
                             android:layout_marginTop="16dp">
 
                             <de.hdodenhof.circleimageview.CircleImageView
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:layout_marginLeft="@dimen/spacing_25dp"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:layout_marginLeft="@dimen/_25sdp"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/bitmap_copy_2"
                                 app:civ_border_width="0dp" />
@@ -96,7 +96,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
-                                android:layout_marginEnd="@dimen/spacing_10dp"
+                                android:layout_marginEnd="@dimen/_10sdp"
                                 android:background="@drawable/style_button_borderradius"
                                 android:gravity="center"
                                 android:text="@string/button_hoy"
@@ -107,58 +107,57 @@
                         <TextView xmlns:android="http://schemas.android.com/apk/res/android"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/spacing_25dp"
+                            android:layout_marginStart="@dimen/_25sdp"
                             android:layout_marginTop="10dp"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/textSize_14sp"
+                            android:textSize="@dimen/_14ssp"
                             tools:text="Nina te ha enviado "
                             android:text="Nina te ha enviado"/>
 
                         <TextView xmlns:android="http://schemas.android.com/apk/res/android"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/spacing_25dp"
+                            android:layout_marginStart="@dimen/_25sdp"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/textSize_25sp"
+                            android:textSize="@dimen/_25ssp"
                             android:text="20,00€"/>
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:paddingStart="@dimen/spacing_25dp"
-                            android:paddingEnd="@dimen/spacing_10dp">
+                            android:paddingStart="@dimen/_25sdp"
+                            android:paddingEnd="@dimen/_10sdp">
 
                             <Button
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
                                 android:background="@drawable/border_color"
-                                android:paddingStart="@dimen/spacing_10dp"
-                                android:paddingEnd="@dimen/spacing_10dp"
                                 android:text="@string/details"
-                                android:textSize="@dimen/textSize_14sp"
-                                app:backgroundTint="#fff" />
+                                android:textSize="@dimen/_14ssp"
+                                app:backgroundTint="#fff"/>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_centerVertical="true"
-                                android:layout_marginEnd="@dimen/spacing_10dp"
+
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Mensaje"
-                                    android:textSize="@dimen/textSize_12sp" />
+                                    android:textSize="@dimen/_12ssp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Por la cena..."
                                     android:textColor="@color/white"
-                                    android:textSize="@dimen/textSize_16sp" />
+                                    android:textSize="@dimen/_16ssp" />
 
                             </LinearLayout>
                         </RelativeLayout>
@@ -175,7 +174,7 @@
                     android:text="@string/send_again"
                     android:layout_marginStart="@dimen/spacing_10dp"
                     android:textColor="#003087"
-                    android:textSize="@dimen/textSize_14sp"
+                    android:textSize="@dimen/_14ssp"
                     android:textStyle="bold"/>
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -192,18 +191,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/spacing_10dp"
+                        android:layout_marginLeft="@dimen/_10sdp"
                         android:text="@string/activity"
                         android:textColor="@color/darkish_blue"
                         android:textStyle="bold"
-                        android:textSize="@dimen/textSize_14sp"/>
+                        android:textSize="@dimen/_14ssp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/see_all"
                         android:layout_alignParentEnd="true"
-                        android:layout_marginRight="@dimen/spacing_10dp"
+                        android:layout_marginRight="@dimen/_10sdp"
                         android:textColor="@color/blue"
                         android:layout_centerVertical="true"
                         android:textSize="@dimen/textSize_12sp"/>
@@ -212,7 +211,7 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycle_view_activity"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="@dimen/_120sdp"
                     android:layout_margin="@dimen/spacing_10dp"/>
             </LinearLayout>
         </ScrollView>

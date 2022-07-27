@@ -32,6 +32,10 @@
         <entry key="..\:/Thuc_Tap_MonstarLab/BaiTap/UiPaypal/app/src/main/res/layout/user_adapter.xml" value="0.25" />
         <entry key="..\:/Thuc_Tap_MonstarLab/BaiTap/UiPaypal/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
         <entry key="..\:/Thuc_Tap_MonstarLab/BaiTap/UiPaypal/app/src/main/res/menu/popup_menu.xml" value="0.33" />
+        <entry key="..\:/UiPaypal/UIPayPal/app/src/main/res/drawable/border_color.xml" value="0.154" />
+        <entry key="..\:/UiPaypal/UIPayPal/app/src/main/res/layout/activity_main.xml" value="0.9" />
+        <entry key="..\:/UiPaypal/UIPayPal/app/src/main/res/layout/history_trade_adapter.xml" value="0.1675213675213675" />
+        <entry key="..\:/UiPaypal/UIPayPal/app/src/main/res/layout/user_adapter.xml" value="0.1675213675213675" />
       </map>
     </option>
   </component>
